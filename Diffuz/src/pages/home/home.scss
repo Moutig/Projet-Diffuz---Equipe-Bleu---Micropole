@@ -1,8 +1,14 @@
 page-home {
 
-  .customHomePage {
-    background: url("../assets/imgs/connection.jpg") no-repeat center center fixed;
-    background-size: 100% 82%;
+  .slide1 {
+    background-color: #052942 ;
+  }
+
+  .slide2 {
+    background: url("../assets/imgs/home1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
   }
 
 
