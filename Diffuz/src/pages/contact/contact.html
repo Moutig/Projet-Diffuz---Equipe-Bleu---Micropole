@@ -7,11 +7,65 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+  <ion-list radio-group [(ngModel)]="LancementDefi">
+
+    <ion-list-header>
+      Je lance mon défi...
+    </ion-list-header>
+
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+      <ion-label>En mon nom</ion-label>
+      <ion-radio value="1" (ionSelect)="radioChecked('lancement',1)"></ion-radio>
     </ion-item>
+
+    <ion-item>
+      <ion-label>Au nom de mon groupe (association ou autre)</ion-label>
+      <ion-radio value="2" (ionSelect)="radioChecked('lancement',2)"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Intitulé du défi</ion-label>
+        <ion-textarea [(ngModel)]="title" name="title" placeholder="Titre défi"></ion-textarea>
+    </ion-item>
+
   </ion-list>
+
+  <ion-list radio-group [(ngModel)]="Category">
+
+    <ion-list-header>
+      Je choisi la catégorie de mon défi...
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Aide aux personnes en difficulté</ion-label>
+      <ion-radio value="1" (ionSelect)="radioChecked(categorie,1)"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Bien être et santé</ion-label>
+      <ion-radio value="2" (ionSelect)="radioChecked(categorie,2)"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Coup de main solidaire</ion-label>
+      <ion-radio value="3" (ionSelect)="radioChecked(categorie,3)"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Culture, sport, et loisirs pour tous</ion-label>
+      <ion-radio value="4" (ionSelect)="radioChecked(categorie,4)"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Éducation et citoyenneté</ion-label>
+      <ion-radio value="5" (ionSelect)="radioChecked(categorie,5)"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nature et environnement</ion-label>
+      <ion-radio value="6" (ionSelect)="radioChecked(categorie,6)"></ion-radio>
+    </ion-item>
+
+  </ion-list>
+
 </ion-content>
