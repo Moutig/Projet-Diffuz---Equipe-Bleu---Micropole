@@ -32,19 +32,17 @@
     </ion-list>
 
     <ion-list>
-      <ion-item class="customFormFiltre">
+      <ion-item class="customField">
         <ion-label fixed>Défi de mes amis</ion-label>
         <ion-select></ion-select>
       </ion-item>
     </ion-list>
 
-    <ion-item>
+    <ion-item class="customField">
       <ion-label>Date</ion-label>
-      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" ></ion-datetime>
     </ion-item>
 
-    <div>
-        <button><ion-icon class="customIcon" name="checkmark-circle"></ion-icon></button>
-    </div>
+    <button><ion-icon class="customIcon" name="checkmark-circle"></ion-icon></button>
 
 </ion-content>
