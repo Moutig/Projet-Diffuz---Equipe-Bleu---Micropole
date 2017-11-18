@@ -1,11 +1,14 @@
 page-home {
 
   .slide1 {
-    background-color: #052942 ;
+    background: url("../assets/imgs/info_v2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
   }
 
   .slide2 {
-    background: url("../assets/imgs/home1.jpg") no-repeat center center fixed;
+    background: url("../assets/imgs/home_v4.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
