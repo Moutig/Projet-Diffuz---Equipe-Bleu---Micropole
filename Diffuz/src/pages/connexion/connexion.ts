@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ConnexionPage } from '../connexion/connexion';
-
+import { AboutPage } from '../about/about';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-connexion',
+  templateUrl: 'connexion.html'
 })
-export class HomePage {
+export class ConnexionPage {
   connexionPage = ConnexionPage;
   constructor(public navCtrl: NavController) {
 
   }
-
-
 
 }
