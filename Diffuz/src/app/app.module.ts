@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { FilterPage } from '../pages/filter/filter';
 import { DefiPage } from '../pages/defi/defi';
+import { ConnexionPage } from '../pages/connexion/connexion';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DefiPage } from '../pages/defi/defi';
     HomePage,
     AboutPage,
     FilterPage,
-    DefiPage
+    DefiPage,
+    ConnexionPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { DefiPage } from '../pages/defi/defi';
     HomePage,
     AboutPage,
     FilterPage,
-    DefiPage
+    DefiPage,
+    ConnexionPage
   ],
   providers: [
     StatusBar,

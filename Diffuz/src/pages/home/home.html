@@ -7,8 +7,10 @@
       <h1>Slide 1</h1>
     </ion-slide>
     <ion-slide class="slide2">
-      <button [navPush]="aboutPage" block>
-        <img src="assets/imgs/diffuz.png">
-      </button>
+        <ion-fab center bottom >
+          <button [navPush]="connexionPage" block>
+            <img src="assets/imgs/diffuz.png">
+          </button>
+        </ion-fab>
     </ion-slide>
   </ion-slides>
