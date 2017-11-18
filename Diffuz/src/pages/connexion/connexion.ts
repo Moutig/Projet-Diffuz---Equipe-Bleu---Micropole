@@ -7,7 +7,7 @@ import { AboutPage } from '../about/about';
   templateUrl: 'connexion.html'
 })
 export class ConnexionPage {
-  connexionPage = ConnexionPage;
+  aboutPage = AboutPage;
   constructor(public navCtrl: NavController) {
 
   }
