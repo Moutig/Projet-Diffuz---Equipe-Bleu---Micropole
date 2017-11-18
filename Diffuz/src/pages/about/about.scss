@@ -7,11 +7,6 @@ page-about {
     -moz-background-size: cover;
   }
 
-  .customButton {
-    background-color: yellow;
-    color: white;
-  }
-
   .customIcon {
     color: #e53357;
     font-size: 48px;
@@ -20,6 +15,22 @@ page-about {
   .customField {
     background-color: #052942;
     color: #fecd1a;
+  }
+
+  .titleLinkMe {
+    margin-top:450px;
+    color: #052942;
+    font-size:21px;
+    font-weight: bold;
+    background-color: none;
+  }
+
+  .titleLink {
+    color: #052942;
+    font-size:21px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    margin-bottom:10px;
   }
 
 

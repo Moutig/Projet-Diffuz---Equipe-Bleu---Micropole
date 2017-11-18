@@ -1,0 +1,107 @@
+<ion-content padding class="customFormFiltre">
+
+ <ion-grid>
+
+  <ion-row col12 >
+    <p class="title">Création défi </p>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label fixed>Titre du défi</ion-label>
+      <ion-item class="customField">
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label fixed>Auteur du défi</ion-label>
+      <ion-item class="customField">
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label fixed>Image</ion-label>
+      <ion-item class="customField">
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label fixed>Thème du défi</ion-label>
+      <ion-item class="customField">
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label>Date</ion-label>
+      <ion-item class="customField" col12>
+        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" ></ion-datetime>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+ <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label>Nature du défi</ion-label>
+      <ion-item class="customField">
+        <ion-select [(ngModel)]="relationship">
+          <ion-option>sur internet</ion-option>
+          <ion-option>sur le terrain</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+ <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label>Lieu</ion-label>
+      <ion-item class="customField">
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label>Description</ion-label>
+      <ion-item class="customField">
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list class="margin0">
+      <ion-label>Temps à donner</ion-label>
+      <ion-item class="customField">
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list>
+        <p>Lien vers mes photos instagram pour contribuer le visuel sur lesquels je mets le # de mon défi.</p>
+    </ion-list>
+  </ion-row>
+
+  <ion-row bottom right col2 offset-10 >
+    <button [navPush]="aboutPage" style="background-color: #F2F1EF">
+      <ion-icon class="customIcon" name="checkmark-circle"></ion-icon>
+    </button>
+  </ion-row>
+
+</ion-grid>
+
+</ion-content>
