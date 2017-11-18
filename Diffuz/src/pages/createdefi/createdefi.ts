@@ -3,10 +3,10 @@ import { NavController } from 'ionic-angular';
 import { AboutPage } from '../about/about';
 
 @Component({
-  selector: 'page-filter',
-  templateUrl: 'filter.html'
+  selector: 'page-createdefi',
+  templateUrl: 'createdefi.html'
 })
-export class FilterPage {
+export class CreatedefiPage {
   aboutPage = AboutPage;
   constructor(public navCtrl: NavController) {
 

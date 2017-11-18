@@ -1,4 +1,4 @@
-page-filter {
+page-createdefi {
 
   .customFormFiltre {
     background-color: #F2F1EF;
@@ -10,18 +10,20 @@ page-filter {
     color: #052942;
     margin-bottom: 10px;
   }
+  .customButton {
+    background-color: yellow;
+    color: white;
+  }
 
   .customIcon {
     color: #e53357;
     font-size: 48px;
-    background-color: #F2F1EF;
-    margin-top:10px;
   }
 
   .customField {
     width:320px;
     background-color: #FFFFFF;
-    color: #fecd1a;
+    color: #052942;
     border: 1px solid white;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
