@@ -1,13 +1,18 @@
 
 <ion-content padding class="customFormFiltre">
   <ion-list>
+    <ion-item class="customField">
+      <ion-label fixed>Nature du défi</ion-label>
+      <ion-select></ion-select>
+      <ion-input type="password"></ion-input>
+    </ion-item>
 
-    <ion-item>
+    <ion-item class="customField">
       <ion-label fixed>Region</ion-label>
       <ion-input type="text" value=""></ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item class="customField">
       <ion-label>Theme</ion-label>
       <ion-select [(ngModel)]="theme" multiple="true">
         <ion-option>Aide aux personnes en difficulté</ion-option>
@@ -19,32 +24,14 @@
       </ion-select>
     </ion-item>
 
-    <ion-item>
-      <ion-label fixed>Nature du défi</ion-label>
-      <ion-select></ion-select>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-
-    <ion-item>
+    <ion-item class="customFormFiltre">
       <ion-label fixed>Défi de mes amis</ion-label>
       <ion-select></ion-select>
-      <ion-input type="password"></ion-input>
-
     </ion-item>
 
-    <ion-icon name="eye"></ion-icon>
-    <ion-icon name="home"></ion-icon>
-    <ion-icon name="add-circle"></ion-icon>
-      <ion-icon name="chatbubbles"></ion-icon>
-       <ion-icon ios="ios-chatbubbles" md="md-chatbubbles"></ion-icon>
-        <ion-icon ios="ios-checkmark-circle-outline" md="md-checkmark-circle-outline"></ion-icon>
-        <ion-icon name="logo-facebook"></ion-icon>
-         <ion-icon name="heart"></ion-icon>
-         <ion-icon name="mail"></ion-icon>
-         <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
-    <br>
-
-    <button ion-button class="customButton" menuToggle>Enregistrer</button>
+    <div>
+      <ion-icon class="customIcon" name="checkmark-circle"></ion-icon>
+    </div>
 
 
   </ion-list>
