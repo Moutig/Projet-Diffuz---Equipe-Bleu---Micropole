@@ -1,38 +1,46 @@
 
 <ion-content padding class="customFormFiltre">
-  <ion-list>
-    <ion-item class="customField">
-      <ion-label fixed>Nature du défi</ion-label>
-      <ion-select></ion-select>
-      <ion-input type="password"></ion-input>
-    </ion-item>
 
-    <ion-item class="customField">
-      <ion-label fixed>Region</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
+    <ion-list >
+      <ion-item class="customField">
+        <ion-label>Nature du défi</ion-label>
+        <ion-select [(ngModel)]="relationship">
+          <ion-option>sur internet</ion-option>
+          <ion-option>sur le terrain</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
 
-    <ion-item class="customField">
-      <ion-label>Theme</ion-label>
-      <ion-select [(ngModel)]="theme" multiple="true">
-        <ion-option>Aide aux personnes en difficulté</ion-option>
-        <ion-option>Bien-être et santé</ion-option>
-        <ion-option>Coup de main solidaire</ion-option>
-        <ion-option>Culture, sport et loisirs pour tous</ion-option>
-        <ion-option>Education et citoyenneté</ion-option>
-        <ion-option>Nature et environnement</ion-option>
-      </ion-select>
-    </ion-item>
+    <ion-list>
+      <ion-item class="customField">
+        <ion-label fixed>Region</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+    </ion-list>
 
-    <ion-item class="customFormFiltre">
-      <ion-label fixed>Défi de mes amis</ion-label>
-      <ion-select></ion-select>
-    </ion-item>
+    <ion-list>
+      <ion-item class="customField">
+        <ion-label>Theme</ion-label>
+        <ion-select [(ngModel)]="theme" multiple="true">
+          <ion-option>Aide aux personnes en difficulté</ion-option>
+          <ion-option>Bien-être et santé</ion-option>
+          <ion-option>Coup de main solidaire</ion-option>
+          <ion-option>Culture, sport et loisirs pour tous</ion-option>
+          <ion-option>Education et citoyenneté</ion-option>
+          <ion-option>Nature et environnement</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item class="customFormFiltre">
+        <ion-label fixed>Défi de mes amis</ion-label>
+        <ion-select></ion-select>
+      </ion-item>
+    </ion-list>
 
     <div>
-      <ion-icon class="customIcon" name="checkmark-circle"></ion-icon>
+        <button><ion-icon class="customIcon" name="checkmark-circle"></ion-icon></button>
     </div>
 
-
-  </ion-list>
 </ion-content>
