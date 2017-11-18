@@ -1,26 +1,33 @@
 <ion-content  padding class="customFormFiltre">
   <ion-grid>
     <ion-row col8 offset-2>
-      <button block style="margin-top:10px;">
-        <img src="assets/imgs/diffuz.png">
+      <button block style="margin-top:30px;background-color:#052942">
+        <img src="assets/imgs/diffuz_log.png">
       </button>
-      <ion-chip style="width:220px; background-color: white;margin-top:10px;">
+    </ion-row>
+    <ion-row col8 offset-2>
+      <ion-chip style="width:210px; background-color: white;margin-top:50px;">
         <ion-label>Continuer avec Google</ion-label>
-        <ion-icon name="logo-google" color="#e53357"></ion-icon>
+        <ion-icon name="logo-google" style="background-color: #e53357"></ion-icon>
       </ion-chip>
-      <ion-chip  style="width:220px; background-color: white;margin-top:10px;">
+      <ion-chip  style="width:210px; background-color: white;margin-top:20px;">
         <ion-label>Continuer avec Facebook</ion-label>
-        <button ion-button [navPush]="aboutPage">
-          <ion-icon name="logo-facebook" color="#e53357"></ion-icon>
+        <button ion-button [navPush]="aboutPage" style="background-color: #e53357">
+          <ion-icon name="logo-facebook" ></ion-icon>
         </button>
       </ion-chip>
-      <ion-chip  style="width:220px; background-color: white;margin-top:10px;">
+      <ion-chip  style="width:210px; background-color: white;margin-top:20px;">
         <ion-label>Continuer avec Instagram</ion-label>
-        <ion-icon name="logo-instagram" color="#e53357"></ion-icon>
+        <ion-icon name="logo-instagram" style="background-color: #e53357"></ion-icon>
       </ion-chip>
-      <p></p>
-      <small style="margin-top:10px;">En appuyant sur Continuer, Créer un compte j'accepte<br>
-      les conditions d'utilisation de la plateforme Diffuz</small>
+      <ion-chip  style="width:210px; background-color: white;margin-top:20px;">
+        <ion-label>Créer un compte</ion-label>
+        <ion-icon name="create" style="background-color: #052942"></ion-icon>
+      </ion-chip>
+    </ion-row>
+    <ion-row col10 offset-1>
+        <small style="text-align:center;margin-top:50px;">En appuyant sur Continuer, Créer un compte j'accepte<br>
+        les conditions d'utilisation de la plateforme Diffuz</small>
     </ion-row>
   </ion-grid>
 </ion-content>

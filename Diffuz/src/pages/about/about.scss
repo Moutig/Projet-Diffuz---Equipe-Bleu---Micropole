@@ -1,8 +1,10 @@
 page-about {
 
   .customFormFiltre {
-    background-color: #052942;
-    color: white;
+    background: url("../assets/imgs/tuiles.jpg") no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
   }
 
   .customButton {
