@@ -9,7 +9,6 @@ import { AboutPage } from '../about/about';
 export class ConnexionPage {
   aboutPage = AboutPage;
   constructor(public navCtrl: NavController) {
-
   }
 
 }

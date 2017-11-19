@@ -1,0 +1,22 @@
+page-mycontact {
+  .customMyProfil {
+    background: url("../assets/imgs/selectChat.jpg") no-repeat center fixed;
+    background-color: none;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+  .scroll-content{
+    overflow-y: hidden;
+  }
+
+  .customButton {
+    background-color: #052942;
+    padding:12px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: white;
+  }
+
+}

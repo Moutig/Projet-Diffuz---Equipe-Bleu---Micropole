@@ -1,10 +1,19 @@
 page-about {
 
   .customFormFiltre {
-    background: url("../assets/imgs/tuiles.jpg") no-repeat center fixed;
+    background: url("../assets/imgs/tuiles-v3.jpg") no-repeat center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+  }
+  .boutonnvide {
+    width:60px;
+    height:60px;
+    background-color: transparent;
+    color: transparent;
+  }
+  .scroll-content{
+    overflow-y: hidden;
   }
 
   .customIcon {

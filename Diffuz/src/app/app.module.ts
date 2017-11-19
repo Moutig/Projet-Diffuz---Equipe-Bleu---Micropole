@@ -11,6 +11,10 @@ import { FilterPage } from '../pages/filter/filter';
 import { DefiPage } from '../pages/defi/defi';
 import { ConnexionPage } from '../pages/connexion/connexion';
 import { CreatedefiPage } from '../pages/createdefi/createdefi';
+import { SuggestionPage } from '../pages/suggestion/suggestion';
+import { MyprofilPage } from '../pages/myprofil/myprofil';
+import { MycontactPage } from '../pages/mycontact/mycontact';
+import { MychatPage } from '../pages/mychat/mychat';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { CreatedefiPage } from '../pages/createdefi/createdefi';
     FilterPage,
     DefiPage,
     ConnexionPage,
-    CreatedefiPage
+    CreatedefiPage,
+    SuggestionPage,
+    MyprofilPage,
+    MycontactPage,
+    MychatPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +42,11 @@ import { CreatedefiPage } from '../pages/createdefi/createdefi';
     FilterPage,
     DefiPage,
     ConnexionPage,
-    CreatedefiPage
+    CreatedefiPage,
+    SuggestionPage,
+    MyprofilPage,
+    MycontactPage,
+    MychatPage
   ],
   providers: [
     StatusBar,
