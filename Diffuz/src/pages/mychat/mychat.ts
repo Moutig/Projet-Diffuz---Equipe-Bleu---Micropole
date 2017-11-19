@@ -1,11 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+<<<<<<< HEAD:Diffuz/src/pages/suggestion/suggestion.ts
 import { Geolocation } from '@ionic-native/geolocation';
+=======
+import { AboutPage } from '../about/about';
+
+>>>>>>> 0a019ee3e80adfd99fe63051e226428b33f0f895:Diffuz/src/pages/mychat/mychat.ts
 
 @Component({
-  selector: 'page-suggestion',
-  templateUrl: 'suggestion.html'
+  selector: 'page-mychat',
+  templateUrl: 'mychat.html'
 })
+<<<<<<< HEAD:Diffuz/src/pages/suggestion/suggestion.ts
+=======
+export class MychatPage {
+  aboutPage = AboutPage;
+  constructor(public navCtrl: NavController) {
+>>>>>>> 0a019ee3e80adfd99fe63051e226428b33f0f895:Diffuz/src/pages/mychat/mychat.ts
 
 export class SuggestionPage {
   coords = []
@@ -25,6 +36,7 @@ export class SuggestionPage {
     console.log(this.dist2)
   }
 
+<<<<<<< HEAD:Diffuz/src/pages/suggestion/suggestion.ts
   getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
     var R = 6371; // Radius of the earth in km
     var dLat = this.deg2rad(lat2-lat1);  // deg2rad below
@@ -48,4 +60,8 @@ export class SuggestionPage {
        this.dist.push(this.dist2);
      }
    }
+=======
+
+
+>>>>>>> 0a019ee3e80adfd99fe63051e226428b33f0f895:Diffuz/src/pages/mychat/mychat.ts
 }

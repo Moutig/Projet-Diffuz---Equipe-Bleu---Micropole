@@ -4,40 +4,39 @@
     <p class="title">Création de mon filtre</p>
   </ion-row>
 
+  <ion-row col12 >
+     <ion-list radio-group class="customField">
+       <ion-list-header class="margin0 sizeheaderlist">
+         Nature du défi
+       </ion-list-header>
+         <ion-item class="margin0">
+           <ion-label class="sizeLabel">Sur internet</ion-label>
+           <ion-radio checked="true" value="web"></ion-radio>
+         </ion-item>
+
+         <ion-item class="margin0">
+           <ion-label class="sizeLabel">Sur le terrain</ion-label>
+           <ion-radio value="terrain"></ion-radio>
+         </ion-item>
+     </ion-list>
+  </ion-row>
+
   <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label fixed>Nom du filtre</ion-label>
+    <ion-list>
       <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
+        <ion-label stacked class="sizeheaderlist">Zone géographique</ion-label>
+          <ion-range class="sizeLabel" min="0" max="50" [(ngModel)]="region">
+            <ion-label range-left>0</ion-label>
+            <ion-label range-right>50 km</ion-label>
+          </ion-range>
+        </ion-item>
     </ion-list>
   </ion-row>
 
   <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Nature du défi</ion-label>
+    <ion-list>
       <ion-item class="customField">
-        <ion-select [(ngModel)]="relationship">
-          <ion-option>sur internet</ion-option>
-          <ion-option>sur le terrain</ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
-  </ion-row>
-
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label fixed>Region</ion-label>
-      <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-row>
-
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Theme</ion-label>
-      <ion-item class="customField">
+        <ion-label stacked class="sizeheaderlist">Theme</ion-label>
         <ion-select [(ngModel)]="theme" multiple="true">
           <ion-option>Aide aux personnes en difficulté</ion-option>
           <ion-option>Bien-être et santé</ion-option>
@@ -51,23 +50,37 @@
   </ion-row>
 
   <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Défi de mes amis</ion-label>
+    <ion-list>
       <ion-item class="customField">
-        <ion-select>
-          <ion-option>Courir à un marathon</ion-option>
-          <ion-option>Participer à un hackathon</ion-option>
-          <ion-option>Coup de main solidaire</ion-option>
-        </ion-select>
+        <ion-label class="sizeLabel">Défi de mes amis</ion-label>
+        <ion-toggle [(ngModel)]="friend"></ion-toggle>
       </ion-item>
     </ion-list>
   </ion-row>
 
   <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Date</ion-label>
+    <ion-list>
       <ion-item class="customField">
-        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" ></ion-datetime>
+            <ion-label class="sizeLabel">Défi de mes groupes</ion-label>
+            <ion-toggle [(ngModel)]="group"></ion-toggle>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list >
+      <ion-item class="customField">
+        <ion-label stacked class="sizeheaderlist">Date</ion-label>
+        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" locale="fr"></ion-datetime>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row col12>
+    <ion-list>
+      <ion-item class="customField">
+        <ion-label stacked class="sizeheaderlist">Nom du filtre</ion-label>
+        <ion-input type="text" value=""></ion-input>
       </ion-item>
     </ion-list>
   </ion-row>

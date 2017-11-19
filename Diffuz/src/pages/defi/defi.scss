@@ -1,7 +1,11 @@
 page-defi {
 
   .customForm {
+    background: url("../assets/imgs/defiFull.jpg") no-repeat center fixed;
     background-color: #052942;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     color: white;
   }
 
@@ -19,6 +23,12 @@ page-defi {
     background-color: #052942;
     color: #fecd1a;
   }
-
+  
+  .boutonnvide {
+    width:80px;
+    height:20px;
+    background-color: red;
+    color: transparent;
+  }
 
 }
