@@ -18,8 +18,8 @@ export class AboutPage {
   createdefiPage = CreatedefiPage;
   favoritePage = FavoritePage;
   myprofilPage = MyprofilPage ;
-  mycontactPage = SuggestionPage ;
-  suggestionPage = MycontactPage;
+  mycontactPage = MycontactPage ;
+  suggestionPage = SuggestionPage;
   constructor(public navCtrl: NavController) {
 
   }
