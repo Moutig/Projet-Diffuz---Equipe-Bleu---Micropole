@@ -1,4 +1,4 @@
-page-suggestion {
+page-favorite {
   .slide3 {
     background: url("../assets/imgs/slide1v2.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -16,6 +16,14 @@ page-suggestion {
   .boutonnvide {
     width:80px;
     height:20px;
+    background-color: transparent;
+    color: transparent;
+  }
+
+  .linkfulldisplay {
+    width:200px;
+    height:200px;
+    margin-top:50px;
     background-color: transparent;
     color: transparent;
   }

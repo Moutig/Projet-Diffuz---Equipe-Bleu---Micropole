@@ -11,7 +11,7 @@ import { FilterPage } from '../pages/filter/filter';
 import { DefiPage } from '../pages/defi/defi';
 import { ConnexionPage } from '../pages/connexion/connexion';
 import { CreatedefiPage } from '../pages/createdefi/createdefi';
-import { SuggestionPage } from '../pages/suggestion/suggestion';
+import { FavoritePage } from '../pages/favorite/favorite';
 import { MyprofilPage } from '../pages/myprofil/myprofil';
 import { MycontactPage } from '../pages/mycontact/mycontact';
 import { MychatPage } from '../pages/mychat/mychat';
@@ -25,7 +25,7 @@ import { MychatPage } from '../pages/mychat/mychat';
     DefiPage,
     ConnexionPage,
     CreatedefiPage,
-    SuggestionPage,
+    FavoritePage,
     MyprofilPage,
     MycontactPage,
     MychatPage
@@ -43,7 +43,7 @@ import { MychatPage } from '../pages/mychat/mychat';
     DefiPage,
     ConnexionPage,
     CreatedefiPage,
-    SuggestionPage,
+    FavoritePage,
     MyprofilPage,
     MycontactPage,
     MychatPage
