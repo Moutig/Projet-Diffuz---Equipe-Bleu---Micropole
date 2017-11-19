@@ -1,18 +1,13 @@
-page-home {
-
-  .slide1 {
-    background: url("../assets/imgs/info_v2.jpg") no-repeat center center fixed;
+page-myprofil {
+  .customMyProfil {
+    background: url("../assets/imgs/profil.jpg") no-repeat center fixed;
+    background-color: none;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
   }
-
-  .slide2 {
-    background: url("../assets/imgs/home_v4.jpg") no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+  .scroll-content{
+    overflow-y: hidden;
   }
-
 
 }

@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'suggestion.html'
 })
 export class SuggestionPage {
+
   constructor(public navCtrl: NavController) {
 
   }
