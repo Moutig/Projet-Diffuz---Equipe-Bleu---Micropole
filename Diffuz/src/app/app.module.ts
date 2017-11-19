@@ -16,6 +16,7 @@ import { FavoritePage } from '../pages/favorite/favorite';
 import { MyprofilPage } from '../pages/myprofil/myprofil';
 import { MycontactPage } from '../pages/mycontact/mycontact';
 import { MychatPage } from '../pages/mychat/mychat';
+import { SuggestionPage } from '../pages/suggestion/suggestion';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MychatPage } from '../pages/mychat/mychat';
     FavoritePage,
     MyprofilPage,
     MycontactPage,
-    MychatPage
+    MychatPage,
+    SuggestionPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { MychatPage } from '../pages/mychat/mychat';
     FavoritePage,
     MyprofilPage,
     MycontactPage,
-    MychatPage
+    MychatPage,
+    SuggestionPage
   ],
   providers: [
     StatusBar,

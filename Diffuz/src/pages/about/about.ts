@@ -6,6 +6,7 @@ import { CreatedefiPage } from '../createdefi/createdefi';
 import { FavoritePage } from '../favorite/favorite';
 import { MyprofilPage } from '../myprofil/myprofil';
 import { MycontactPage } from '../mycontact/mycontact';
+import { SuggestionPage } from '../suggestion/suggestion';
 
 @Component({
   selector: 'page-about',
@@ -17,7 +18,8 @@ export class AboutPage {
   createdefiPage = CreatedefiPage;
   favoritePage = FavoritePage;
   myprofilPage = MyprofilPage ;
-  mycontactPage = MycontactPage ;
+  mycontactPage = SuggestionPage ;
+  suggestionPage = MycontactPage;
   constructor(public navCtrl: NavController) {
 
   }
