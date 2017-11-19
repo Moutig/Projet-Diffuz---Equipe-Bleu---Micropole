@@ -10,4 +10,13 @@ page-myprofil {
     overflow-y: hidden;
   }
 
+  .customButton {
+    background-color: #052942;
+    padding:12px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: white;
+  }
+
 }

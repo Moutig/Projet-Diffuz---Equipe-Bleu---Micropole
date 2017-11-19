@@ -6,7 +6,12 @@ page-about {
     -webkit-background-size: cover;
     -moz-background-size: cover;
   }
-
+  .boutonnvide {
+    width:60px;
+    height:60px;
+    background-color: transparent;
+    color: transparent;
+  }
   .scroll-content{
     overflow-y: hidden;
   }
