@@ -13,6 +13,8 @@ import { ConnexionPage } from '../pages/connexion/connexion';
 import { CreatedefiPage } from '../pages/createdefi/createdefi';
 import { SuggestionPage } from '../pages/suggestion/suggestion';
 import { MyprofilPage } from '../pages/myprofil/myprofil';
+import { MycontactPage } from '../pages/mycontact/mycontact';
+import { MychatPage } from '../pages/mychat/mychat';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MyprofilPage } from '../pages/myprofil/myprofil';
     ConnexionPage,
     CreatedefiPage,
     SuggestionPage,
-    MyprofilPage
+    MyprofilPage,
+    MycontactPage,
+    MychatPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,9 @@ import { MyprofilPage } from '../pages/myprofil/myprofil';
     ConnexionPage,
     CreatedefiPage,
     SuggestionPage,
-    MyprofilPage
+    MyprofilPage,
+    MycontactPage,
+    MychatPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,6 @@
-page-myprofil {
+page-mychat {
   .customMyProfil {
-    background: url("../assets/imgs/profilSsBtn.jpg") no-repeat center fixed;
+    background: url("../assets/imgs/chat.jpg") no-repeat center fixed;
     background-color: none;
     background-size: cover;
     -webkit-background-size: cover;
@@ -19,4 +19,10 @@ page-myprofil {
     color: white;
   }
 
+  .boutonnvide {
+    width:80px;
+    height:20px;
+    background-color: transparent;
+    color: transparent;
+  }
 }

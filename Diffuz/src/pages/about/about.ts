@@ -5,6 +5,7 @@ import { DefiPage } from '../defi/defi';
 import { CreatedefiPage } from '../createdefi/createdefi';
 import { SuggestionPage } from '../suggestion/suggestion';
 import { MyprofilPage } from '../myprofil/myprofil';
+import { MycontactPage } from '../mycontact/mycontact';
 
 @Component({
   selector: 'page-about',
@@ -16,6 +17,7 @@ export class AboutPage {
   createdefiPage = CreatedefiPage;
   suggestionPage = SuggestionPage;
   myprofilPage = MyprofilPage ;
+  mycontactPage = MycontactPage ;
   constructor(public navCtrl: NavController) {
 
   }
