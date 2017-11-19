@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { FilterPage } from '../filter/filter';
 import { DefiPage } from '../defi/defi';
 import { CreatedefiPage } from '../createdefi/createdefi';
-import { SuggestionPage } from '../suggestion/suggestion';
+import { FavoritePage } from '../favorite/favorite';
 import { MyprofilPage } from '../myprofil/myprofil';
 import { MycontactPage } from '../mycontact/mycontact';
 
@@ -15,7 +15,7 @@ export class AboutPage {
   filterPage = FilterPage;
   defiPage = DefiPage;
   createdefiPage = CreatedefiPage;
-  suggestionPage = SuggestionPage;
+  favoritePage = FavoritePage;
   myprofilPage = MyprofilPage ;
   mycontactPage = MycontactPage ;
   constructor(public navCtrl: NavController) {
