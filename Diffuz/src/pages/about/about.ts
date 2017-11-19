@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { FilterPage } from '../filter/filter';
 import { DefiPage } from '../defi/defi';
 import { CreatedefiPage } from '../createdefi/createdefi';
+import { SuggestionPage } from '../suggestion/suggestion';
 
 @Component({
   selector: 'page-about',
@@ -12,6 +13,7 @@ export class AboutPage {
   filterPage = FilterPage;
   defiPage = DefiPage;
   createdefiPage = CreatedefiPage;
+  suggestionPage = SuggestionPage;
   constructor(public navCtrl: NavController) {
 
   }
