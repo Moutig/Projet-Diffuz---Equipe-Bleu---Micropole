@@ -12,6 +12,7 @@ import { DefiPage } from '../pages/defi/defi';
 import { ConnexionPage } from '../pages/connexion/connexion';
 import { CreatedefiPage } from '../pages/createdefi/createdefi';
 import { SuggestionPage } from '../pages/suggestion/suggestion';
+import { MyprofilPage } from '../pages/myprofil/myprofil';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SuggestionPage } from '../pages/suggestion/suggestion';
     DefiPage,
     ConnexionPage,
     CreatedefiPage,
-    SuggestionPage
+    SuggestionPage,
+    MyprofilPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { SuggestionPage } from '../pages/suggestion/suggestion';
     DefiPage,
     ConnexionPage,
     CreatedefiPage,
-    SuggestionPage
+    SuggestionPage,
+    MyprofilPage
   ],
   providers: [
     StatusBar,
