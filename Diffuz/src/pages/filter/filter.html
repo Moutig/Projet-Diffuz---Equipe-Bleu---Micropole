@@ -11,12 +11,12 @@
        </ion-list-header>
          <ion-item class="margin0">
            <ion-label class="sizeLabel">Sur internet</ion-label>
-           <ion-radio class="select" checked="true" value="web"></ion-radio>
+           <ion-radio checked="true" value="web"></ion-radio>
          </ion-item>
 
          <ion-item class="margin0">
            <ion-label class="sizeLabel">Sur le terrain</ion-label>
-           <ion-radio class="select" value="terrain"></ion-radio>
+           <ion-radio value="terrain"></ion-radio>
          </ion-item>
      </ion-list>
   </ion-row>
@@ -25,7 +25,7 @@
     <ion-list>
       <ion-item class="customField">
         <ion-label stacked class="sizeheaderlist">Zone géographique</ion-label>
-          <ion-range class="select" min="0" max="50" [(ngModel)]="region">
+          <ion-range class="sizeLabel" min="0" max="50" [(ngModel)]="region">
             <ion-label range-left>0</ion-label>
             <ion-label range-right>50 km</ion-label>
           </ion-range>
@@ -37,7 +37,7 @@
     <ion-list>
       <ion-item class="customField">
         <ion-label stacked class="sizeheaderlist">Theme</ion-label>
-        <ion-select class="select" [(ngModel)]="theme" multiple="true">
+        <ion-select [(ngModel)]="theme" multiple="true">
           <ion-option>Aide aux personnes en difficulté</ion-option>
           <ion-option>Bien-être et santé</ion-option>
           <ion-option>Coup de main solidaire</ion-option>
@@ -53,7 +53,7 @@
     <ion-list>
       <ion-item class="customField">
         <ion-label class="sizeLabel">Défi de mes amis</ion-label>
-        <ion-toggle class="select" [(ngModel)]="friend"></ion-toggle>
+        <ion-toggle [(ngModel)]="friend"></ion-toggle>
       </ion-item>
     </ion-list>
   </ion-row>
@@ -62,7 +62,7 @@
     <ion-list>
       <ion-item class="customField">
             <ion-label class="sizeLabel">Défi de mes groupes</ion-label>
-            <ion-toggle class="select" [(ngModel)]="group"></ion-toggle>
+            <ion-toggle [(ngModel)]="group"></ion-toggle>
       </ion-item>
     </ion-list>
   </ion-row>
@@ -71,7 +71,7 @@
     <ion-list >
       <ion-item class="customField">
         <ion-label stacked class="sizeheaderlist">Date</ion-label>
-        <ion-datetime class="select" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" locale="fr"></ion-datetime>
+        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" locale="fr"></ion-datetime>
       </ion-item>
     </ion-list>
   </ion-row>
@@ -80,7 +80,7 @@
     <ion-list>
       <ion-item class="customField">
         <ion-label stacked class="sizeheaderlist">Nom du filtre</ion-label>
-        <ion-input class="select" type="text" value=""></ion-input>
+        <ion-input type="text" value=""></ion-input>
       </ion-item>
     </ion-list>
   </ion-row>
