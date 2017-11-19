@@ -8,6 +8,7 @@ import { AboutPage } from '../about/about';
 })
 export class CreatedefiPage {
   aboutPage = AboutPage;
+
   constructor(public navCtrl: NavController) {
 
   }

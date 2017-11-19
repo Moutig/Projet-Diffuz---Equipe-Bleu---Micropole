@@ -2,106 +2,164 @@
 
  <ion-grid>
 
-  <ion-row col12 >
-    <p class="title">Création défi </p>
-  </ion-row>
+    <ion-row col12 >
+      <p class="title">Je lance un défi</p>
+    </ion-row>
 
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label fixed>Titre du défi</ion-label>
-      <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-row>
+    <ion-row col12>
+      <ion-list>
+        <ion-item class="customField">
+          <ion-label stacked class="sizeheaderlist">Auteur du défi</ion-label>
+          <ion-input class="select" type="text" value=""></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-row>
 
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label fixed>Auteur du défi</ion-label>
-      <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-row>
+    <ion-row col12>
+      <ion-list>
+        <ion-item class="customField">
+          <ion-label stacked class="sizeheaderlist">Thème du défi</ion-label>
+          <ion-input class="select" type="text" value=""></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-row>
 
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label fixed>Image</ion-label>
-      <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-row>
+    <ion-row col12>
+      <ion-list>
+        <ion-item class="customField">
+          <ion-label stacked class="sizeheaderlist">Titre du défi</ion-label>
+          <ion-input class="select" type="text" value=""></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-row>
 
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label fixed>Thème du défi</ion-label>
-      <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-row>
+    <ion-row col12 >
+       <ion-list radio-group class="customField">
+         <ion-list-header class="margin0 sizeheaderlist">
+           Nature du défi
+         </ion-list-header>
+           <ion-item class="margin0">
+             <ion-label class="sizeLabel">Sur internet</ion-label>
+             <ion-radio checked="true" value="web"></ion-radio>
+           </ion-item>
 
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Date</ion-label>
-      <ion-item class="customField" col12>
-        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" ></ion-datetime>
-      </ion-item>
-    </ion-list>
-  </ion-row>
+           <ion-item class="margin0">
+             <ion-label class="sizeLabel">Sur le terrain</ion-label>
+             <ion-radio value="terrain"></ion-radio>
+           </ion-item>
+       </ion-list>
+    </ion-row>
 
- <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Nature du défi</ion-label>
-      <ion-item class="customField">
-        <ion-select [(ngModel)]="relationship">
-          <ion-option>sur internet</ion-option>
-          <ion-option>sur le terrain</ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
-  </ion-row>
 
- <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Lieu</ion-label>
-      <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-row>
+    <ion-row col12>
+       <ion-list>
+         <ion-item class="customField">
+           <ion-label stacked class="sizeheaderlist">Lieu</ion-label>
+           <ion-input class="select" type="text" value=""></ion-input>
+         </ion-item>
+       </ion-list>
+    </ion-row>
 
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Description</ion-label>
-      <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-row>
+     <ion-row col12>
+       <ion-list>
+         <ion-item class="customField" col12>
+           <ion-label stacked class="sizeheaderlist">Date</ion-label>
+           <ion-datetime class="select" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" locale="fr"></ion-datetime>
+         </ion-item>
+       </ion-list>
+     </ion-row>
 
-  <ion-row col12>
-    <ion-list class="margin0">
-      <ion-label>Temps à donner</ion-label>
-      <ion-item class="customField">
-        <ion-input type="text" value=""></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-row>
+     <ion-row col12>
+        <ion-list radio-group class="customField">
+          <ion-list-header class="margin0 sizeheaderlist">
+            Objectifs participants
+          </ion-list-header>
+            <ion-item  >
+              <ion-input type="number" value=""></ion-input>
+            </ion-item>
 
-  <ion-row col12>
-    <ion-list>
-        <p>Lien vers mes photos instagram pour contribuer le visuel sur lesquels je mets le # de mon défi.</p>
-    </ion-list>
-  </ion-row>
+                <ion-item class="margin0">
+                  <ion-label class="sizeLabel">Souhaité(s)</ion-label>
+                  <ion-radio checked="true" value="souhaité"></ion-radio>
+                </ion-item>
 
-  <ion-row bottom right col2 offset-10 >
-    <button [navPush]="aboutPage" style="background-color: #F2F1EF">
-      <ion-icon class="customIcon" name="checkmark-circle"></ion-icon>
-    </button>
-  </ion-row>
+                <ion-item class="margin0">
+                  <ion-label class="sizeLabel">Maximum</ion-label>
+                  <ion-radio value="maximum"></ion-radio>
+                </ion-item>
+            </ion-list>
+      </ion-row>
 
-</ion-grid>
+      <ion-row col12>
+        <ion-list>
+          <ion-item class="customField">
+            <ion-label stacked class="sizeheaderlist">Temps à donner</ion-label>
+            <ion-select class="select" [(ngModel)]="tempsadonner" okText="Ok" cancelText="Annuler">
+              <ion-option>Exigeant - Plus d'1/2 journée</ion-option>
+              <ion-option>Intermédiaire - Entre une heure et 1/2 journée</ion-option>
+              <ion-option>Flash - Moins d'une heure</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-row>
+
+      <ion-row col12>
+        <ion-list>
+          <ion-item class="customField">
+            <ion-label stacked class="sizeheaderlist">Mots clés</ion-label>
+            <ion-select class="select" [(ngModel)]="theme" multiple="true">
+              <ion-option>Action</ion-option>
+              <ion-option>Adolescents</ion-option>
+              <ion-option>Aide aux victimes</ion-option>
+              <ion-option>Bénévole</ion-option>
+              <ion-option>Chômeur</ion-option>
+              <ion-option>Collecte</ion-option>
+              <ion-option>Distribution</ion-option>
+              <ion-option>Evènement solidaire</ion-option>
+              <ion-option>Handicap</ion-option>
+              <ion-option>International</ion-option>
+              <ion-option>Jeunes</ion-option>
+              <ion-option>Malade</ion-option>
+              <ion-option>Mobilisation</ion-option>
+              <ion-option>Organisation</ion-option>
+              <ion-option>Pauvreté</ion-option>
+              <ion-option>Petite enfance</ion-option>
+              <ion-option>Précarité</ion-option>
+              <ion-option>Prévention</ion-option>
+              <ion-option>Réfugié</ion-option>
+              <ion-option>Sans-abris</ion-option>
+              <ion-option>Séniors</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-row>
+
+
+    <ion-row col12>
+      <ion-list>
+        <ion-item class="customField">
+          <ion-label stacked class="sizeheaderlist">Description</ion-label>
+          <ion-input class="select" type="text" value=""></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row>
+      <button ion-button class="customButton" ng-click="addMedia()">Ajouter une image</button>
+    </ion-row>
+
+    <ion-row col12>
+      <ion-list>
+          <p><a href="https://www.instagram.com/DiffuzSolidaire/" blank="parent">Lien vers mes photos instagram</a></p>
+      </ion-list>
+    </ion-row>
+
+    <ion-row bottom right col2 offset-10 >
+      <button [navPush]="aboutPage" style="background-color: #F2F1EF">
+        <ion-icon class="customIcon" name="checkmark-circle"></ion-icon>
+      </button>
+    </ion-row>
+
+  </ion-grid>
 
 </ion-content>
