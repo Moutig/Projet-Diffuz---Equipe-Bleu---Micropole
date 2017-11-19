@@ -9,7 +9,12 @@ page-mycontact {
   .scroll-content{
     overflow-y: hidden;
   }
-
+  .boutonnvide {
+    width:40px;
+    height:40px;
+    background-color: transparent;
+    color: transparent;
+  }
   .customButton {
     background-color: #052942;
     padding:12px;
